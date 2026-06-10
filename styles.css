@@ -1,0 +1,21 @@
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: #f5f5f5;
+  color: #222;
+}
+
+header {
+  background-color: #1a1a2e;
+  color: #fff;
+  padding: 1rem 2rem;
+}
+
+main {
+  padding: 2rem;
+}
