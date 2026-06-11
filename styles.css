@@ -18,15 +18,16 @@ body {
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  padding: 1rem 1.2rem;
+  padding: 2.5rem 1.2rem;
 }
 
 .page {
   width: 100%;
   max-width: 1900px;
-  height: calc(100vh - 2rem);
+  height: calc(100vh - 5rem);
   display: flex;
   flex-direction: column;
+  justify-content: center;
   gap: 1rem;
 }
 
