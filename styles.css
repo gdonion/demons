@@ -1437,6 +1437,7 @@ body {
   gap: 0.65rem;
   flex: 1;
   min-height: 0;
+  max-height: 175px;
 }
 
 .ov-card {
@@ -1446,10 +1447,10 @@ body {
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-  gap: clamp(0.25rem, 4cqh, 1rem);
+  gap: clamp(0.4rem, 4cqh, 1rem);
   background: #f7f5f3;
   border-radius: 12px;
-  padding: clamp(0.5rem, 7cqh, 1.2rem) 0.85rem;
+  padding: clamp(0.7rem, 7cqh, 1.2rem) 0.85rem;
   position: relative;
   overflow: hidden;
   container-type: size;
@@ -1461,7 +1462,7 @@ body {
 }
 
 .ov-card-label {
-  font-size: clamp(0.5rem, 7cqh, 0.85rem);
+  font-size: clamp(0.68rem, 7cqh, 0.85rem);
   font-weight: 800;
   text-transform: uppercase;
   letter-spacing: 0.12em;
@@ -1524,7 +1525,7 @@ body {
 }
 
 .ov-ring-val {
-  font-size: clamp(0.9rem, 16cqh, 2.8rem);
+  font-size: clamp(1.3rem, 16cqh, 2.8rem);
   font-weight: 800;
   color: #2d2926;
   line-height: 1;
@@ -1532,7 +1533,7 @@ body {
 }
 
 .ov-ring-pct {
-  font-size: clamp(0.42rem, 6.5cqh, 0.9rem);
+  font-size: clamp(0.6rem, 6.5cqh, 0.9rem);
   font-weight: 700;
   color: #f97316;
   line-height: 1;
@@ -1567,7 +1568,7 @@ body {
 }
 
 .ov-stat-big {
-  font-size: clamp(0.85rem, 16cqh, 2.2rem);
+  font-size: clamp(1.1rem, 16cqh, 2.2rem);
   font-weight: 800;
   color: #2d2926;
   line-height: 1;
@@ -1575,7 +1576,7 @@ body {
 }
 
 .ov-stat-sub {
-  font-size: clamp(0.45rem, 6.5cqh, 0.78rem);
+  font-size: clamp(0.6rem, 6.5cqh, 0.78rem);
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.1em;
@@ -1584,7 +1585,7 @@ body {
 
 /* ── TIMELINE CARD ───────────────────────────────────────────────────── */
 .timeline-card {
-  flex: 3;
+  flex: 2;
   min-height: 0;
   display: flex;
   flex-direction: column;
