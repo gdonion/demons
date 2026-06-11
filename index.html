@@ -4,17 +4,376 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>GD Tracker</title>
+  <link rel="icon" type="image/png" href="favicon.png" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
 
-  <header>
-    <h1>GD Tracker</h1>
-  </header>
+  <div class="page">
 
-  <main>
-    <p>Welcome to GD Tracker.</p>
-  </main>
+      <!-- NAV -->
+      <nav class="site-nav">
+        <div class="nav-left">
+          <a href="#" class="nav-tab active">Profile</a>
+          <a href="https://www.pointercrate.com/demonlist/statsviewer/?player=63153" target="_blank" rel="noopener" class="nav-tab">Demonlist<svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="margin-left:4px;opacity:0.7"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg></a>
+          <a href="https://aredl.net/profile/user/gd.onion" target="_blank" rel="noopener" class="nav-tab">AREDL<svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round" style="margin-left:4px;opacity:0.7"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg></a>
+        </div>
+      </nav>
+
+      <!-- PROFILE BANNER -->
+      <div class="banner-shell">
+      <div class="profile-pill">
+        <div class="pill-bg"></div>
+        <div class="pill-overlay"></div>
+        <div class="pill-grid"></div>
+
+        <div class="pfp-section">
+          <div class="pfp-ring">
+            <div class="pfp-inner">
+              <img src="pfp.png" alt="pfp" class="pfp-img" />
+            </div>
+          </div>
+        </div>
+
+        <div class="profile-info">
+          <div class="info-body">
+          <div class="name-row">
+            <span class="username">onion</span>
+            <svg class="verified-badge" width="22" height="24" viewBox="0 0 22 24" fill="none">
+              <path d="M11 0L21 3.5V12C21 18 16.5 22.5 11 24C5.5 22.5 1 18 1 12V3.5L11 0Z" fill="#f97316"/>
+              <path d="M6.5 12.5L9.5 15.5L15.5 9" stroke="white" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+          </div>
+          <p class="tagline">upcoming top 1 vegetable</p>
+          <div class="meta-row">
+            <span class="meta-item">
+              <svg class="meta-icon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                <rect x="3" y="4" width="18" height="18" rx="2"/>
+                <line x1="16" y1="2" x2="16" y2="6"/>
+                <line x1="8" y1="2" x2="8" y2="6"/>
+                <line x1="3" y1="10" x2="21" y2="10"/>
+              </svg>
+              Joined September 2023
+            </span>
+            <span class="meta-sep">|</span>
+            <a href="https://www.youtube.com/@gd_onion" target="_blank" rel="noopener" class="meta-link">
+              <svg class="meta-icon yt-icon" width="16" height="12" viewBox="0 0 16 12" fill="currentColor">
+                <path d="M15.6 1.9S15.4.6 14.8.1C14.1-.5 13.3-.5 13-.5 10.9 0 8 0 8 0S5.1 0 3 .1c-.3 0-1.1 0-1.8.6C.6.6.4 1.9.4 1.9S.2 3.3.2 4.6v1.4c0 1.3.2 2.7.2 2.7s.2 1.3.8 1.8c.7.6 1.6.6 2 .6 1.5.1 6.8.2 6.8.2s4.9 0 6.7-.2c.3 0 1.1 0 1.8-.6.6-.5.8-1.8.8-1.8S20 7.3 20 6V4.6c-.2-1.3-.4-2.7-.4-2.7zM6.5 8V3.5l5 2.3-5 2.2z"/>
+              </svg>
+              youtube.com/@gd_onion
+            </a>
+          </div>
+          <div class="profile-links">
+            <a href="https://www.pointercrate.com/demonlist/statsviewer/?player=63153" target="_blank" rel="noopener" class="profile-link-btn">
+              Demonlist
+              <svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
+            </a>
+            <a href="https://aredl.net/profile/user/gd.onion" target="_blank" rel="noopener" class="profile-link-btn">
+              AREDL
+              <svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
+            </a>
+            <a href="https://x.com/onion_gd" target="_blank" rel="noopener" class="profile-link-btn">
+              <svg width="11" height="11" viewBox="0 0 24 24" fill="currentColor"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-4.714-6.231-5.401 6.231H2.746l7.73-8.835L1.254 2.25H8.08l4.253 5.622 5.911-5.622zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+              <svg width="9" height="9" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 01-2 2H5a2 2 0 01-2-2V8a2 2 0 012-2h6M15 3h6v6M10 14L21 3"/></svg>
+            </a>
+          </div>
+          </div>
+        </div>
+
+        <div class="stat-cards">
+          <div class="stat-card" data-slot="favLevel">
+            <div class="card-label-wrap">
+              <span class="card-label-icon">&#9733;</span>
+              <p class="card-label">Favorite Level</p>
+            </div>
+            <div class="card-thumb thumb-1"></div>
+            <p class="card-title">—</p>
+            <p class="card-sub">not set yet</p>
+          </div>
+          <div class="stat-card" data-slot="favChallenge">
+            <div class="card-label-wrap">
+              <span class="card-label-icon">&#9733;</span>
+              <p class="card-label">Favorite Challenge</p>
+            </div>
+            <div class="card-thumb thumb-2"></div>
+            <p class="card-title">—</p>
+            <p class="card-sub">not set yet</p>
+          </div>
+          <div class="stat-card" data-slot="recent">
+            <div class="card-label-wrap">
+              <span class="card-label-icon">&#8635;</span>
+              <p class="card-label">Most Recent</p>
+            </div>
+            <div class="card-thumb thumb-3"></div>
+            <p class="card-title">—</p>
+            <p class="card-sub">not set yet</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- CONTENT -->
+      <div class="content-grid">
+
+        <!-- LEVELS CARD -->
+        <div class="content-card levels-card">
+          <div class="levels-header">
+            <div class="levels-title-group">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="#f97316" stroke="none"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/></svg>
+              <span class="levels-heading">My Top 5</span>
+            </div>
+            <div class="levels-tabs">
+              <button class="lvl-tab active" data-tab="level">Extremes</button>
+              <button class="lvl-tab" data-tab="challenge">Challenges</button>
+            </div>
+            <div class="levels-actions">
+              <button class="lvl-action-btn" id="loadFileBtn" title="Import demons.json">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="17 8 12 3 7 8"/><line x1="12" y1="3" x2="12" y2="15"/></svg>
+              </button>
+              <button class="lvl-action-btn" id="exportBtn" title="Export demons.json">
+                <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" y1="15" x2="12" y2="3"/></svg>
+              </button>
+              <button class="lvl-action-btn lvl-add-btn" id="openAddModal" title="Add completion">+</button>
+            </div>
+          </div>
+
+          <div class="levels-list" id="levelsList"></div>
+
+          <div class="view-all-row">
+            <button class="view-all-btn">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/></svg>
+              <span class="view-all-text">View Full List</span>
+            </button>
+          </div>
+
+          <input type="file" id="jsonFileInput" accept=".json" style="display:none" />
+        </div>
+
+        <!-- RIGHT — Stats Overview card (contains timeline as inset card) -->
+        <div class="content-card stats-overview-card" id="statsOverviewCard">
+
+          <!-- Header lives on the parent card, like levels-header -->
+          <div class="timeline-header">
+            <div class="timeline-title-group">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#f97316" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+              <span class="timeline-heading">Timeline</span>
+            </div>
+            <div class="tl-tabs">
+              <button class="tl-tab active" data-tltab="level">Extremes</button>
+              <button class="tl-tab" data-tltab="challenge">Challenges</button>
+            </div>
+            <div class="tl-filter-group">
+              <button class="tl-filter-btn active" data-months="6">6M</button>
+              <button class="tl-filter-btn" data-months="12">12M</button>
+            </div>
+          </div>
+
+          <!-- Timeline body card -->
+          <div class="timeline-card" id="timelineCard">
+
+            <div class="timeline-body" id="timelineBody"></div>
+
+            <div class="tl-selected-panel" id="tlSelectedPanel" style="display:none">
+              <div class="tl-sel-header">
+                <span class="tl-sel-month" id="tlSelMonth"></span>
+                <span class="tl-sel-sublabel">Top 5</span>
+              </div>
+              <div class="tl-sel-levels" id="tlSelLevels"></div>
+            </div>
+
+          </div>
+
+          <div class="ov-cards-row">
+
+            <!-- Enjoyment Ring -->
+            <div class="ov-card ov-card--enjoy">
+              <span class="ov-card-label">Avg Enjoyment</span>
+              <div class="ov-ring-wrap">
+                <svg class="ov-ring" viewBox="0 0 100 100">
+                  <defs>
+                    <linearGradient id="enjoymentGrad" x1="88" y1="50" x2="12" y2="50" gradientUnits="userSpaceOnUse">
+                      <stop offset="0%" stop-color="#ea6000"/>
+                      <stop offset="100%" stop-color="#f97316"/>
+                    </linearGradient>
+                  </defs>
+                  <circle class="ov-ring-bg" cx="50" cy="50" r="38"/>
+                  <circle class="ov-ring-fill" id="enjoymentRingFill" cx="50" cy="50" r="38"/>
+                </svg>
+                <div class="ov-ring-inner">
+                  <span class="ov-ring-val" id="avgEnjoymentVal">—</span>
+                  <span class="ov-ring-pct">%</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Attempts -->
+            <div class="ov-card">
+              <span class="ov-card-label">Attempts</span>
+              <div class="ov-stat-group">
+                <div class="ov-stat-row">
+                  <span class="ov-stat-big" id="totalAttemptsVal">—</span>
+                  <span class="ov-stat-sub">Total</span>
+                </div>
+                <div class="ov-stat-row">
+                  <span class="ov-stat-big" id="avgAttemptsVal">—</span>
+                  <span class="ov-stat-sub">Average</span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Playtime -->
+            <div class="ov-card">
+              <span class="ov-card-label">Playtime</span>
+              <div class="ov-stat-group">
+                <div class="ov-stat-row">
+                  <span class="ov-stat-big" id="totalPlaytimeVal">—</span>
+                  <span class="ov-stat-sub">Total</span>
+                </div>
+                <div class="ov-stat-row">
+                  <span class="ov-stat-big" id="avgPlaytimeVal">—</span>
+                  <span class="ov-stat-sub">Average</span>
+                </div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="view-all-row">
+            <button class="view-all-btn">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>
+              <span class="view-all-text">View Full Stats</span>
+            </button>
+          </div>
+
+        </div>
+
+      </div>
+      </div><!-- /banner-shell -->
+  </div>
+
+  <!-- ADD / EDIT MODAL -->
+  <div class="modal-overlay" id="modalOverlay">
+    <div class="modal-box">
+      <div class="modal-header">
+        <h2 id="modalTitle">Add Completion</h2>
+        <button class="modal-close" id="modalClose">
+          <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+        </button>
+      </div>
+
+      <div class="modal-body">
+        <!-- LEFT: image + type -->
+        <div class="modal-left">
+          <p class="mlabel">Level Image</p>
+
+          <div id="uploadPrompt" class="upload-prompt">
+            <div class="upload-inner">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+              <span>Click to upload image</span>
+            </div>
+          </div>
+
+          <div id="cropArea" style="display:none" class="crop-area">
+            <p class="crop-hint">Drag image to reposition crop</p>
+            <canvas id="cropCanvas"></canvas>
+            <button id="applyCropBtn" class="apply-crop-btn">&#10003; Confirm Crop</button>
+          </div>
+
+          <div id="cropPreview" style="display:none" class="crop-preview-area">
+            <img id="previewImg" alt="Level thumbnail" />
+            <button id="rechoooseBtn" class="rechoose-btn">&#8635; Change Image</button>
+          </div>
+
+          <input type="file" id="imgFileInput" accept="image/*" style="display:none" />
+
+          <p class="mlabel" style="margin-top:1.2rem">Type</p>
+          <div class="type-toggle">
+            <button class="type-btn active" data-type="level">Level</button>
+            <button class="type-btn" data-type="challenge">Challenge</button>
+          </div>
+        </div>
+
+        <!-- RIGHT: form -->
+        <div class="modal-right">
+          <div class="mform">
+            <div class="mfield full">
+              <label>Level Name</label>
+              <input id="fName" type="text" placeholder="e.g. Thinking Space II" />
+            </div>
+            <div class="mfield full">
+              <label>Creator</label>
+              <input id="fCreator" type="text" placeholder="e.g. CairoX" />
+            </div>
+            <div class="mfield half">
+              <label>Position #</label>
+              <input id="fPosition" type="number" min="1" placeholder="1" />
+            </div>
+            <div class="mfield half">
+              <label>Enjoyment %</label>
+              <input id="fEnjoyment" type="number" min="0" max="100" placeholder="96" />
+            </div>
+            <div class="mfield half">
+              <label>Attempts</label>
+              <input id="fAttempts" type="number" min="0" placeholder="2736" />
+            </div>
+            <div class="mfield half">
+              <label>Playtime</label>
+              <input id="fPlaytime" type="text" placeholder="3h 42m" />
+            </div>
+            <div class="mfield half">
+              <label>Completion Date</label>
+              <input id="fDate" type="date" />
+            </div>
+            <div class="mfield half">
+              <label>AREDL Placement</label>
+              <input id="fAredlPlacement" type="number" min="1" placeholder="e.g. 47" />
+            </div>
+            <div class="mfield half">
+              <label>Worst Fail %</label>
+              <input id="fWorstFail" type="number" min="0" max="99" placeholder="e.g. 98" />
+            </div>
+            <div class="mfield half">
+              <label>Rate Status</label>
+              <div class="rate-toggle">
+                <button class="rate-btn active" data-rate="rated">&#9733; Rated</button>
+                <button class="rate-btn" data-rate="unrated">&#9733; Unrated</button>
+              </div>
+            </div>
+            <div class="mfield full">
+              <label>YouTube Link</label>
+              <input id="fLink" type="url" placeholder="https://youtube.com/watch?v=..." />
+            </div>
+            <div class="mfield full pin-section">
+              <label class="mlabel">Pin to Profile</label>
+              <div class="check-group">
+                <label class="check-item">
+                  <input type="checkbox" id="chkFavLevel" />
+                  <span class="check-box"></span>
+                  <span class="check-text">Set as favorite level</span>
+                </label>
+                <label class="check-item">
+                  <input type="checkbox" id="chkFavChallenge" />
+                  <span class="check-box"></span>
+                  <span class="check-text">Set as favorite challenge</span>
+                </label>
+                <label class="check-item">
+                  <input type="checkbox" id="chkRecent" />
+                  <span class="check-box"></span>
+                  <span class="check-text">Mark as most recent</span>
+                </label>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="modal-footer">
+        <button id="cancelBtn" class="mbtn-cancel">Cancel</button>
+        <button id="saveBtn" class="mbtn-save">Save Completion</button>
+      </div>
+    </div>
+  </div>
 
   <script src="script.js"></script>
 </body>
